@@ -1,0 +1,73 @@
+<HTML>
+<script language="javascript" type="text/javascript">
+
+var student = {roll:101,name:"Aman",marks:87};
+
+document.write("<br>Roll No:"+student.roll);
+document.write("<br>Name:"+student.name);
+document.write("<br>Marks:"+student.marks);
+
+
+var book = new Object();
+
+book.bookid=1002;
+book.bookname="JAVA Complete Reference";
+book.price=850;
+document.write("<br>");
+document.write("<br>Book No:"+book.bookid);
+document.write("<br>Book Name:"+book.bookname);
+document.write("<br>Price:"+book.price);
+
+
+function Employee(eno,ename,esal)
+{
+	this.eno=eno;
+	this.ename=ename;
+	this.esal=esal;
+}
+
+var e = new Employee(1020,"Aman Verma",89000);
+
+document.write("<br>");
+document.write("<br>Emp No:"+e.eno);
+document.write("<br>Emp Name:"+e.ename);
+document.write("<br>Salary:"+e.esal);
+
+var emp = [
+				new Employee(1020,"Aman Verma",89000),
+				new Employee(1021,"Aman Verma2",89001),
+				new Employee(1022,"Aman Verma3",89002)
+
+		];
+
+for(i=0;i<emp.length;i++)
+{
+	document.write("<br>"+emp[i].eno);
+	document.write("<br>"+emp[i].ename);
+	document.write("<br>"+emp[i].esal);
+}
+
+
+var s1 = "Pune";
+document.write("<br>"+s1);
+
+var s2 = new String("Mumbai");
+document.write("<br>"+s2);
+
+document.write("<br>"+s2.substring(1,4));
+document.write("<br>"+s2.toUpperCase());
+document.write("<br>"+s2.concat(" Pune Mumbai"));
+
+var d1 =  new Date();
+document.write("<br>Date::"+d1);
+document.write("<br>Date::"+d1.getDate()+"/"+d1.getMonth()+"/"+d1.getYear());
+document.write(" Time:"+d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+
+
+
+
+
+</script>
+
+
+</HTML>

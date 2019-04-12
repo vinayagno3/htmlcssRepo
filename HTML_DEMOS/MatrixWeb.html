@@ -1,0 +1,43 @@
+<html>
+
+<script language="javascript" type="text/javascript">
+
+function mat()
+{
+    var a =[ [1,2,3],[4,5,6],[7,8,9] ];
+    
+    var s="";
+
+    s="<table>";
+    for(i=0;i<a.length;i++)
+    {
+        s+="<tr>";
+        for(j=0;j<a[i].length;j++)
+        {
+            s+="<td width=50>"+a[i][j];
+
+        }
+        s+="</tr>";
+
+    }
+    s+="</table>"
+    
+document.getElementById("m").innerHTML=s;
+
+}
+
+
+
+</script>
+
+<body bgcolor="cyan">
+
+<input type="button" id="btn" value="Matrix" onclick="mat()">
+<input type="button" id="btn" value="Matrix" onclick="mat()">
+<input type="button" id="btn" value="Matrix" onclick="mat()">
+
+<div id="m">
+    </div>
+</body>
+
+</html>

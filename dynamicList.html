@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+  <head> 
+    <meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /> 
+    <title>Dynamic Select Statements</title> 
+<script type="text/javascript">
+
+ var categoryLists = new Array(4) 
+ categoryLists["empty"] = ["Select a Item"]; 
+ categoryLists["Computer Software"] = ["RedHat Linux", "Fedora Linux", "Windows 10","Windows 7","Visual Studio 2015"]; 
+categoryLists["Computer Hardware"] = ["Motherboard", "DDR3 Ram", "SMPS", "LED Monitor"]; 
+ categoryLists["Food"] = ["Pizza", "Paneer Burji", "Kaju Paneer"]; 
+ categoryLists["Sports"]= ["Running Shoes", "Cricket Bat", "Tennis Ball", "Leg Pads"]; 
+
+ function categoryChange(selectObj) 
+{ 
+
+	 var idx = selectObj.selectedIndex; 
+	 var which = selectObj.options[idx].value; 
+      	 
+
+	 cList = categoryLists[which]; 
+
+	 var cSelect = document.getElementById("catitems"); 
+	  
+
+	 var len=cSelect.options.length; 
+	 
+
+
+	 while (cSelect.options.length > 0) 
+	{ 
+		 cSelect.remove(0); 
+	 } 
+
+ var newOption; 
+
+ for (var i=0; i<cList.length; i++) { 
+	 newOption = document.createElement("option"); 
+	 newOption.value = cList[i];  
+	 newOption.text=cList[i]; 
+
+ // add the new option 
+ try { 
+	 cSelect.add(newOption);  // this will fail in DOM browsers but is needed for IE 
+ } catch (e) 
+{ 
+ cSelect.appendChild(newOption); ``````````````
+ } 
+ } 
+ } 
+//]]>
+</script>
+
+</head>
+
+<body>
+  <noscript>This page requires JavaScript be available and enabled to function properly</noscript>
+  <h1>Dynamic Select Statements</h1>
+  <label for="category">Select Category</label>
+  <select id="category" onchange="categoryChange(this);">
+    <option value="empty">Select a Category</option>
+    <option value="Computer Software">Computer Software</option>
+    <option value="Computer Hardware">Computer Hardware</option>
+    <option value="Food">Food</option>
+    <option value="Sports">Sport</option>
+  </select>
+  <br/>
+  <label for="catitems">Select a Item</label>
+  <select id="catitems">
+    <option value="0">Select a Item</option>
+  </select>
+</body>
+ </html>

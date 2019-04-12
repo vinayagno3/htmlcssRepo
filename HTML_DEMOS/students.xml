@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:s="student_types">
+	<s:student>
+		<name>Ajay Sharma</name>
+		<birthdate>28-06-2001</birthdate>
+		<marks>78</marks>
+	</s:student>
+
+	<s:student>
+		<name>Anita Sharma</name>
+		<birthdate>28-06-2006</birthdate>
+		<marks>85</marks>
+	</s:student>
+</students>

@@ -1,0 +1,61 @@
+#header
+{
+	font-size:36pt;
+	color:navy;
+	
+}
+th
+{
+	background-color:yellow;
+	font-family:Arial;
+	font-size:18px;
+	text-align:center;
+	color:navy;
+}
+#c1
+{
+	width:100px;
+}
+#c2
+{
+	width:350px;
+	text-align:left;
+}
+#c3
+{
+	width:100px;
+
+}
+td
+{
+	text-align:center;
+	color:red;
+	font-family:Arial;
+	font-size:18px;
+	
+}
+#p1
+{
+	text-align:right;
+	color:navy;
+	font-size:14px;
+	background-color:pink;
+}
+
+body .imp
+{
+	background-color:red;
+	
+}
+
+body  .x
+{
+	background-color:black;
+	
+}
+
+body  .x .xx
+{
+	background-color:cyan;
+	
+}

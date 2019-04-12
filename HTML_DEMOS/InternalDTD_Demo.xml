@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE student[ 
+<!ELEMENT student(sname, city, mobile)>
+<!ELEMENT sname (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+]>
+<student>
+<sname>Aman</sname>
+<city>Delhi</city>
+<mobile>98567898</mobile>
+</student>

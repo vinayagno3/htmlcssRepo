@@ -1,0 +1,72 @@
+<html>
+<body bgcolor="cyan">
+<a href="html1.html" target="ifcontent">About Us</a><br>
+<a href="">Product Info</a>
+<a href="">Customer Info</a>
+<script language="javascript" TYPE="text/javascript" >
+	
+	function f()
+	{
+	window.location="https://mail.cognizant.com";
+	}
+	
+	//Creation of Object Using Object Literal
+	
+	/*stud = {roll:101,name:"Ajay Shrma", marks:76};
+	document.write("Roll No:"+stud.roll);
+	document.write("Name:"+stud.name);
+	document.write("Marks:"+stud.marks);
+	*/
+
+	
+	//Creating instance of Object directly
+	/*
+	var stud=new Object();
+	
+	stud.roll=101;
+	stud.name="Ajay Shrma";
+	stud.marks=76;
+	
+	document.write("Roll No:"+stud.roll);
+	document.write("Name:"+stud.name);
+	document.write("Marks:"+stud.marks);
+	*/
+	
+	//Creating instance of Object using constructor
+	
+	function student(roll,name,marks)
+	{
+		this.roll=roll;
+		this.name=name;
+		this.marks=marks;
+		document.write("<br>3-param");
+	}
+	
+	
+	function createobject(a1,a2,a3)
+	{
+	
+	a2= document.getElementById("tname").value;
+	
+	
+	
+	var stud = new student(a1,a2,a3);
+	
+	document.write("Roll No:"+stud.roll);
+	document.write("Name:"+stud.name);
+	document.write("Marks:"+stud.marks);
+		
+	}
+	
+	
+
+</script>
+
+<input type="text" id="tname" size="50"><br>
+
+<input type="button" value="Click ME" onclick="createobject(111,'Ram Naik',89)">
+
+
+</body>
+
+</html>

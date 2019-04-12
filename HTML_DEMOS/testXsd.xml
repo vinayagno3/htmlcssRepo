@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<student xmlns:x="https://www.cognizant.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="student_types.xsd">
+<x:student>
+      <rollno>123</rollno>
+      <studentname>Arvind</studentname>
+      <marks>56<marks/>
+</x:student>
+  

@@ -1,0 +1,49 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function sayHello()
+{
+	//alert('Hello Friends!');
+	
+	//var v = prompt('Are U Sure');  //returns string
+
+	var v = confirm('Are U Sure');  // returns true/false
+	
+	alert(v);
+	document.getElementById("message").innerHTML="Hello Friends";
+	
+}
+
+function product()
+{
+	
+	var v1 = prompt('Enter First Number');  //returns string
+	var v2 = prompt('Enter Second Number');  //returns string
+	
+	
+	var n = Number.parseInt(v1) * Number.parseInt(v2);
+		
+	document.getElementById("message").innerHTML="<h1>PRODUCT::"+n+"</h1>";
+	
+	window.location.replace("https://mail.cognizant.com");
+}
+</script>
+
+</head>
+<body>
+<input type="Button" id="btn" value="Click" onclick="sayHello()">
+<input type="Button" id="btn" value="Product" onclick="product()">
+
+<DIV id="message">
+
+</DIV>
+
+<img src="images/paul-hinz.jpg"  onclick="alert('Thank U');"></img>
+
+
+</body>
+
+
+
+
+</html>
